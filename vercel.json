@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "env": {
+    "PAWAPAY_URL": "@PAWAPAY_URL",
+    "AUTHTOKEN": "@AUTHTOKEN",
+    "MONIUNIFYURL": "@MONIUNIFYURL",
+    "MONIUNIFYVERIFYURL": "@MONIUNIFYVERIFYURL"
+  },
+  "builds": [
+    {
+      "src": "dist/main.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/main.js",
+      "methods": ["GET", "POST", "PUT", "DELETE"]
+    }
+  ]
+}
