@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "PAWAPAY_URL": "PAWAPAY_URL",
-    "AUTHTOKEN": "AUTHTOKEN",
-    "MONIUNIFYURL": "MONIUNIFYURL",
-    "MONIUNIFYVERIFYURL": "MONIUNIFYVERIFYURL"
-  },
   "builds": [
     {
       "src": "dist/main.js",
